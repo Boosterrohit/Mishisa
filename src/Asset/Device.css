@@ -13,9 +13,7 @@
     padding: 0 5px;
     min-height: 310px;
   }
-  .slick-dots {
-    display: none !important;
-  }
+
   .arrow-left2 {
     top: 8rem !important;
   }
@@ -48,7 +46,8 @@
 }
 .slick-dots li button:before {
   font-size: 12px;
-  color: white;
+  display: block;
+  color: rgb(255, 255, 255);
 }
 
 .slick-dots li.slick-active button:before {

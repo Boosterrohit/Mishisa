@@ -15,6 +15,9 @@ module.exports = {
         "custom-min-height": "352px",
         "mobile-min-height": "216px",
       },
+      colors: {
+        hover_card: "#4B5563",
+      },
     },
   },
   plugins: [],

@@ -9,14 +9,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* Slick Slider management */
+
 .slick-list {
   padding: 0px 0px !important;
 }
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
+
 .slick-next {
   display: none !important;
 }
