@@ -23,6 +23,7 @@ import sm5 from "./Asset/Image/sm5.jpg";
 import sm6 from "./Asset/Image/sm6.jpg";
 import sm7 from "./Asset/Image/sm7.png";
 import sm8 from "./Asset/Image/sm8.png";
+import { IoIosArrowDown } from "react-icons/io";
 export const headerSilkSlider = [
   {
     id: 1,
@@ -401,4 +402,222 @@ export const contactInfo = [
   "Mercantile plaza, durbarmarg",
   "info@mishisa.com",
   "(+977) 9803524430",
+];
+export const links = [
+  {
+    id: "1",
+    name: "Home",
+  },
+  {
+    id: "2",
+    name: "Make Up",
+    arrow: <IoIosArrowDown />,
+    submenu: true,
+    sublink: [
+      {
+        head: "Face",
+        sublink: [
+          { name: "Powder" },
+          { name: "Contour" },
+          { name: "Concealer" },
+          { name: "Camouflage Make Up" },
+          { name: "Blusher" },
+          { name: "Face Primer" },
+          { name: "Foundation" },
+          { name: "Highlight MakeUp" },
+          { name: "Makeup Fixing spray" },
+          { name: "Prep, Prime & Fix" },
+          { name: "Shaping / Strobing" },
+          { name: "Highlighting / Bronzing" },
+        ],
+      },
+      {
+        head: "Brows",
+        sublink: [
+          { name: "Brow Fix" },
+          { name: "EyeBrow Kit" },
+          { name: "EyeBrow Pencil" },
+          { name: "Powder" },
+        ],
+      },
+      {
+        head: "Brushes",
+        sublink: [
+          { name: "Face Brushes" },
+          { name: "Eyes Brushes" },
+          { name: "Lip Brush" },
+          { name: "Kabuki Brush" },
+          { name: "Brush Set" },
+          { name: "Brush Cleanser" },
+          { name: "Cheek Brush" },
+          { name: "Concealer Brush" },
+        ],
+      },
+      {
+        head: "Eyes",
+        sublink: [
+          { name: "Eyelashes" },
+          { name: "Eye Liner and Eye Pencil" },
+          { name: "Eye Primer" },
+          { name: "Eye Shadow Palette" },
+          { name: "Glitter & Shine" },
+          { name: "Mascara" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "3",
+    name: "Skin Care",
+    arrow: <IoIosArrowDown />,
+    submenu: true,
+    sublink: [
+      {
+        head: "Shop By Concern",
+        sublink: [
+          { name: "Dandruff and itches" },
+          { name: "Acne & Blemishes" },
+          { name: "Anti-Ageing" },
+          { name: "Dark Circles / Puffiness" },
+          { name: "Dark Spots" },
+          { name: "Dryness" },
+          { name: "Dullness / Luminosity" },
+          { name: "Eyelash / Eyebrow" },
+        ],
+      },
+      {
+        head: "Dandruff and itches",
+        sublink: [],
+      },
+      {
+        head: "Body Care",
+        sublink: [],
+      },
+    ],
+  },
+  {
+    id: "4",
+    name: "Hair Care",
+  },
+  {
+    id: "5",
+    name: "Tools",
+  },
+  {
+    id: "6",
+    name: "Bath & Body",
+  },
+  {
+    id: "7",
+    name: "Brands",
+  },
+  {
+    id: "8",
+    name: "Offers",
+  },
+  {
+    id: "9",
+    name: "Gift Card",
+  },
+];
+export const links2 = [
+  {
+    id: "2",
+    name: "Make Up",
+    arrow: <IoIosArrowDown />,
+    submenu: true,
+    sublink: [
+      {
+        head: "Face",
+        sublink: [
+          { name: "Powder" },
+          { name: "Contour" },
+          { name: "Concealer" },
+          { name: "Camouflage Make Up" },
+          { name: "Blusher" },
+          { name: "Face Primer" },
+          { name: "Foundation" },
+          { name: "Highlight MakeUp" },
+          { name: "Makeup Fixing spray" },
+          { name: "Prep, Prime & Fix" },
+          { name: "Shaping / Strobing" },
+          { name: "Highlighting / Bronzing" },
+        ],
+      },
+      {
+        head: "Brows",
+        sublink: [
+          { name: "Brow Fix" },
+          { name: "EyeBrow Kit" },
+          { name: "EyeBrow Pencil" },
+          { name: "Powder" },
+        ],
+      },
+      {
+        head: "Brushes",
+        sublink: [
+          { name: "Face Brushes" },
+          { name: "Eyes Brushes" },
+          { name: "Lip Brush" },
+          { name: "Kabuki Brush" },
+          { name: "Brush Set" },
+          { name: "Brush Cleanser" },
+          { name: "Cheek Brush" },
+          { name: "Concealer Brush" },
+        ],
+      },
+      {
+        head: "Eyes",
+        sublink: [
+          { name: "Eyelashes" },
+          { name: "Eye Liner and Eye Pencil" },
+          { name: "Eye Primer" },
+          { name: "Eye Shadow Palette" },
+          { name: "Glitter & Shine" },
+          { name: "Mascara" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "3",
+    name: "Skin Care",
+    arrow: <IoIosArrowDown />,
+    submenu: true,
+    sublink: [
+      {
+        head: "Shop By Concern",
+        sublink: [
+          { name: "Dandruff and itches" },
+          { name: "Acne & Blemishes" },
+          { name: "Anti-Ageing" },
+          { name: "Dark Circles / Puffiness" },
+          { name: "Dark Spots" },
+          { name: "Dryness" },
+          { name: "Dullness / Luminosity" },
+          { name: "Eyelash / Eyebrow" },
+        ],
+      },
+      {
+        head: "Dandruff and itches",
+        sublink: [],
+      },
+      {
+        head: "Body Care",
+        sublink: [],
+      },
+    ],
+  },
+  {
+    id: "4",
+    name: "Hair Care",
+  },
+  {
+    id: "5",
+    name: "Tools",
+  },
+  {
+    id: "6",
+    name: "Bath & Body",
+  },
 ];

@@ -17,6 +17,10 @@ module.exports = {
       },
       colors: {
         hover_card: "#4B5563",
+        vibrant: "#e74c3c",
+      },
+      margin: {
+        margintop: "6.8px",
       },
     },
   },

@@ -15,7 +15,7 @@ const TopBar = () => {
             <img
               src={Logo}
               alt="Mishisa"
-              className="max-w-full w-36 sm:w-56 Nest_Hub_img"
+              className="max-w-full w-36 sm:w-56 Nest_Hub_img sm:ml-9 md:ml-0 lg:ml-0 ml-9"
             />
           </Link>
           <div className="hidden sm:hidden md:hidden lg:block xl:block ">
