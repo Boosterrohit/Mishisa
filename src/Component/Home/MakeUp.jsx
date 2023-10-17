@@ -81,7 +81,7 @@ const MakeUp = () => {
             {makeUp.map((item) => {
               return (
                 <div key={item.id} className="px-2">
-                  <div className="border rounded-lg border-gray-400 p-5 lg:min-h-[395px] min-h-[414px] sm:min-h-[414px] md:min-h-[414px] bg-white ">
+                  <div className="border rounded-lg border-gray-400 flex flex-col  p-5 lg:min-h-[395px] min-h-[414px] sm:min-h-[414px] md:min-h-[414px] bg-white ">
                     <div className="flex justify-between items-center">
                       <span
                         className={
@@ -101,19 +101,19 @@ const MakeUp = () => {
                         className="max-w-full h-auto w-48  object-contain"
                       />
                     </div>
-                    <div className="sm:mt-5 mt-3">
+                    <div className="sm:mt-5 mt-3 ">
                       <p className="text-sm  text-gray-500">{item.title}</p>
-                      <p className="text-gray-500  tracking-tight font-semibold">
+                      <p className="text-gray-500 text-[16.8px] hover:text-vibrant hover:underline   font-medium  ">
                         {item.text}
                       </p>
-                      <div className="flex">
-                        <p className="font-medium text-xl text-gray-700">
-                          {item.price}
-                        </p>
-                        <del className="ml-2 text-red-500 text-xl font-bold">
-                          {item.delPrice}
-                        </del>
-                      </div>
+                    </div>
+                    <div className="flex mt-auto">
+                      <p className="font-medium text-xl text-gray-700">
+                        {item.price}
+                      </p>
+                      <del className="ml-2 text-red-500 text-xl font-bold">
+                        {item.delPrice}
+                      </del>
                     </div>
                   </div>
                 </div>

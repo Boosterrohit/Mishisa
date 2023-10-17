@@ -55,12 +55,12 @@ const FeatureBrand = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-b to-black opacity-60 from-transparent rounded-2xl"></div>
                   </div>
-                  <div className="px-5 top-24 sm:top-28 md:top-16 lg:top-52 xl:top-52 absolute text-white font-bold">
+                  <div className="px-5 top-24 sm:top-28 md:top-20 lg:top-52 xl:top-52 absolute text-white font-bold">
                     <p>{item.title}</p>
-                    <h2 className="py-2 text-lg sm:text-xl md:text-xl md:leading-5 sm:leading-4 leading-5">
+                    <h2 className="py-2 mt-3 sm:mt-3 md:mt-0 text-lg sm:text-xl md:text-sm lg:text-lg sm:leading-4">
                       {item.text}
                     </h2>
-                    <p>{item.link}</p>
+                    <p className="mt-2 sm:mt-2 md:mt-0">{item.link}</p>
                   </div>
                 </div>
               );

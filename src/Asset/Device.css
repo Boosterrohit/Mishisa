@@ -1,42 +1,50 @@
 @media (min-width: 1024px) and (max-width: 1279px) {
-  .Nest_Hub_img {
-    width: 28%;
-  }
-  .Nest_Hub_input {
-    width: 75%;
-    margin-left: 13px;
-  }
-  .Nest_Hub_py {
-    padding: 8px 15px;
-  }
   .device_responive {
     padding: 0 5px;
     min-height: 310px;
   }
+  .cent {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 0;
+  }
+  .Nest_Hub_input {
+    width: 90% !important;
+    margin-right: -40px !important;
+    margin-left: 6px;
+  }
+  .nest_hub-image {
+    width: 100%;
 
+    object-fit: contain;
+  }
   .arrow-left2 {
     top: 8rem !important;
   }
   .arrow-right2 {
     bottom: 8rem !important;
   }
+  .devid {
+    padding-left: 31px;
+    padding-right: 31px;
+  }
 }
 
 @media (min-width: 1280px) and (max-width: 1290px) {
-  .Nest_Hub_py {
-    padding: 8px 15px;
-  }
-  .device_responive {
-    padding: 0 5px;
-  }
-  .slick-dots {
-    display: none !important;
-  }
+  /* .Nest_Hub_py {
+      padding: 8px 15px;
+    }
+    .device_responive {
+      padding: 0 5px;
+    }
+    .slick-dots {
+      display: none !important;
+    } */
 }
 
 .box {
-  border-bottom-left-radius: 40% !important;
-  border-bottom-right-radius: 40% !important;
+  border-bottom-left-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
 }
 .slick-dots {
   top: 92%;

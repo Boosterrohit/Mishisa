@@ -89,6 +89,7 @@ const CreateAccount = () => {
           </form>
         </div>
       </div>
+      <hr className="py-2 mt-4" />
     </section>
   );
 };

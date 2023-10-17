@@ -22,8 +22,8 @@ const Navbar = () => {
         <CgMenuLeft size={27} className="text-gray-500" />
       </div>
       <div className={`overlay ${open ? "block" : "hidden"}`}></div>
-      <nav className="bg-red-500 overflow-y-auto mt-1 sm:mt-1 mb-2 sm:mb-2 md:mb-3 lg:mb-0">
-        <div className="container max-w-[85rem] w-full mx-auto px-7 lg:px-44">
+      <nav className="bg-vibrant overflow-y-auto mt-1 sm:mt-1 mb-2 sm:mb-2 md:mb-3 lg:mb-0">
+        <div className="container max-w-[85rem] w-full mx-auto px-7 lg:px-44 devid">
           <div
             className={`md:flex hidden justify-between items-center ${
               open ? "" : "hidden"
@@ -40,8 +40,8 @@ const Navbar = () => {
                   <span className="mt-[4.5px] mx-1">{item.arrow}</span>
                 </p>
                 {item.submenu && (
-                  <div className="absolute top-28 mt-margintop hidden group-hover:block hover:block bg-white shadow-md w-full left-0 right-0 z-20">
-                    <div className="flex">
+                  <div className="absolute bg-white shadow-md max-w-[1440px]  container mx-auto  top-[117.4px]  mt-margintop hidden group-hover:block hover:block   left-0 right-0 z-20">
+                    <div className="flex ">
                       {item.sublink.map((mysublink) => (
                         <div key={mysublink.id} className="block px-10">
                           <p href="/" className="text-gray-500 font-bold">

@@ -49,10 +49,7 @@ const Login = () => {
               />
             </div>
             <div className="mt-4">
-              <input
-                type="checkbox"
-                className="mr-1 appearance-none checked:bg-gray-500 checked:border-gray  bg-gray-800 w-3 h-3"
-              />
+              <input type="checkbox" className="mr-1 " />
               <label htmlFor="remember">Remember me</label>
             </div>
             <button

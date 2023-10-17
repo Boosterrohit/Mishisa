@@ -12,19 +12,21 @@ const Footer = () => {
               alt="Bottom Logo"
               className="max-w-full h-auto w-52 mx-10"
             />
-            <p className="text-left mt-2 mx-10">
+            <p className="text-left mt-2 mx-10 tracking-wide font-medium text-gray-600">
               @ 2023 Mishisa.
               <br />
               All Rights Reserved
             </p>
           </div>
-          <div className="flex  justify-between items-center sm:mx-6 mx-2">
+          <div className="flex  justify-between items-center sm:mx-6 mx-2 mt-3">
             {["Top Category", "Help"].map((heading) => (
               <div key={heading} className="sm:mx-6 mx-1">
-                <p className="font-bold text-lg text-gray-800">{heading}</p>
+                <p className="font-bold text-lg text-gray-800 mb-3">
+                  {heading}
+                </p>
                 {topCategory.map((item) => (
                   <div key={item.id} className="mb-2">
-                    <p className="leading-4 text-gray-600 font-semibold">
+                    <p className="leading-4 text-gray-700 text-base tracking-wide ">
                       {item.anchor}
                     </p>
                   </div>
@@ -32,21 +34,23 @@ const Footer = () => {
               </div>
             ))}
           </div>
-          <div className="flex justify-between sm:mx-6 mx-2">
+          <div className="flex justify-between sm:mx-6  mx-2 mt-3">
             {["Quick Links", "Social"].map((heading, index) => (
               <div key={index} className="sm:mx-6 mx-1">
-                <p className="font-bold text-gray-800 text-[17px]">{heading}</p>
+                <p className="font-bold text-gray-800 mb-3 text-[17px]">
+                  {heading}
+                </p>
                 {heading === "Social"
                   ? socialLinks.map((link, linkIndex) => (
                       <div key={linkIndex} className="mb-2">
-                        <p className="leading-4 text-gray-600 font-semibold">
+                        <p className="leading-4  text-gray-700 text-base tracking-wide">
                           {link}
                         </p>
                       </div>
                     ))
                   : topCategory.map((item) => (
                       <div key={item.id} className="mb-2">
-                        <p className="leading-4 text-gray-600 font-semibold">
+                        <p className="leading-4 text-gray-700 text-base tracking-wide">
                           {item.anchor}
                         </p>
                       </div>
@@ -55,11 +59,11 @@ const Footer = () => {
             ))}
           </div>
           <div>
-            <div className="mr-20">
-              <p className="font-bold text-lg text-gray-800">Contact</p>
+            <div className="mr-20 mt-3 px-3 sm:px-3 md:px-12 lg:px-0">
+              <p className="font-bold text-lg text-gray-800 mb-3">Contact</p>
               {contactInfo.map((info, infoIndex) => (
                 <div key={infoIndex} className="mb-2">
-                  <p className="leading-4 text-gray-600 font-semibold">
+                  <p className="leading-4 text-gray-700 text-base tracking-wide">
                     {info}
                   </p>
                 </div>

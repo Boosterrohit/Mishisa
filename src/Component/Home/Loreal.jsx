@@ -8,7 +8,7 @@ function SampleNextArrow({ onClick }) {
   return (
     <div className="relative">
       <div
-        className="arrwo arrow-right  bg-white sm:w-16 sm:h-16 h-8 w-8 flex justify-center items-center rounded-full  -right-1  shadow-md absolute sm:bottom-40 bottom-[188px]"
+        className="arrwo arrow-right  bg-white sm:w-16 sm:h-16 h-8 w-8 flex justify-center items-center rounded-full  -right-1  shadow-md absolute sm:bottom-30 bottom-[210px] lg:bottom-[220px]"
         onClick={onClick}
       >
         <BiChevronRight size={35} />
@@ -20,7 +20,7 @@ function SamplePrevArrow({ onClick }) {
   return (
     <div className="relative">
       <div
-        className="arrwo arrow-left bg-white sm:w-16 sm:h-16 h-8 w-8 flex justify-center items-center rounded-full -left-1 absolute z-10 shadow-md lg:top-[220px] top-[212px] md:top-[230px] sm:top-[203px]"
+        className="arrwo arrow-left bg-white sm:w-16 sm:h-16 h-8 w-8 flex justify-center items-center rounded-full -left-1 absolute z-10 shadow-md lg:top-[167px] top-[212px] md:top-[230px] sm:top-[203px]"
         onClick={onClick}
       >
         <BiChevronLeft size={35} />
@@ -76,8 +76,8 @@ const Loreal = () => {
             {skinCare.map((item) => {
               return (
                 <div key={item.id} className="px-2">
-                  <div className=" min-h-[395px] ">
-                    <div className="bg-white p-4 h-[279px] shadow-md box rounded-md">
+                  <div className=" min-h-[395px] flex flex-col">
+                    <div className="bg-white p-4 h-[255px] shadow-md box rounded-md">
                       <div className="flex justify-between items-center">
                         <span
                           className={
@@ -90,27 +90,29 @@ const Loreal = () => {
                         </span>
                         <AiFillHeart className="text-gray-600" size={20} />
                       </div>
-                      <div className="flex justify-center mt-5">
+                      <div className="flex justify-center mt-8">
                         <img
                           src={item.image4}
                           alt="make_Up_Products"
-                          className="max-w-full h-auto w-48  object-contain rounded-3xl"
+                          className="max-w-full h-auto w-48 z-20  object-contain rounded-3xl"
                         />
                       </div>
                     </div>
-                    <div className="mt-2 p-6">
+
+                    <div className="w-full h-[100px] rounded-[50%] shadow-md bottom-16 relative bg-white"></div>
+                    <div className="px-2 bottom-11 relative">
                       <p className="text-sm  text-gray-500">{item.title}</p>
-                      <p className="text-gray-500  tracking-tight font-semibold">
+                      <p className="text-gray-500 text-[16.8px] hover:text-vibrant hover:underline   font-medium">
                         {item.text}
                       </p>
-                      <div className="flex">
-                        <p className="font-medium text-xl text-gray-700">
-                          {item.price}
-                        </p>
-                        <del className="ml-2 text-red-500 text-xl font-bold">
-                          {item.delPrice}
-                        </del>
-                      </div>
+                    </div>
+                    <div className="flex mt-auto relative bottom-8 px-2">
+                      <p className="font-medium text-xl text-gray-700">
+                        {item.price}
+                      </p>
+                      <del className="ml-2 text-red-500 text-xl font-bold">
+                        {item.delPrice}
+                      </del>
                     </div>
                   </div>
                 </div>
