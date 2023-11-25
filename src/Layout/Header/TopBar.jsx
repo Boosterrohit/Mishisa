@@ -9,7 +9,7 @@ const TopBar = () => {
   const [hoverCard, setHoverCard] = useState(false);
   return (
     <section>
-      <div className="container mx-auto flex justify-between items-center py-3 max-w-[1440px] px-7 lg:py-3">
+      <div className="container  mx-auto flex justify-between items-center py-3 max-w-[1440px] px-7 lg:py-3">
         <div className="flex">
           <Link
             to="/"
@@ -47,7 +47,7 @@ const TopBar = () => {
             <Link to="/createAccount">
               <div className="flex">
                 <AiFillHeart
-                  className="text-gray-500 mx-4 hidden sm:hidden md:hidden lg:block xl:block "
+                  className="text-[#4E4E4E] mx-4 hidden sm:hidden md:hidden lg:block xl:block "
                   size={28}
                 />
                 <div className="hidden sm:hidden md:hidden lg:block xl:block">
@@ -59,14 +59,14 @@ const TopBar = () => {
             </Link>
           </div>
           <div
-            className="flex relative"
+            className="flex relative "
             onMouseEnter={() => setHoverCard(true)}
             onMouseLeave={() => setHoverCard(false)}
           >
             <div>
-              <BiSolidShoppingBagAlt className="text-gray-500" size={28} />
+              <BiSolidShoppingBagAlt className="text-[#4E4E4E] " size={28} />
               {hoverCard && (
-                <div className="bg-white z-20 fixed right-0  rounded-md w-80  shadow-lg py-2">
+                <div className="bg-white mx-0 sm:mx-[-26.9px] z-20 absolute right-0 rounded-md w-80  shadow-lg py-2">
                   <div>
                     <div className="flex justify-between border-b border-gray-200 py-1 p-3">
                       <h4 className="font-bold text-hover_card">
@@ -85,9 +85,11 @@ const TopBar = () => {
                         <p className="text-gray-500 font-bold">Rs.0</p>
                       </div>
                       <div className="flex justify-between mt-5 p-3">
-                        <button className="rounded-md border border-hover_card py-3 px-8 font-semibold text-hover_card hover:bg-red-500 hover:border-red-500 hover:text-white">
-                          View Cart
-                        </button>
+                        <Link to="/cart">
+                          <button className="rounded-md border border-hover_card py-3 px-8 font-semibold text-hover_card hover:bg-red-500 hover:border-red-500 hover:text-white">
+                            View Cart
+                          </button>
+                        </Link>
                         <button className="bg-hover_card py-3 px-8 rounded-md text-white font-semibold hover:bg-red-500">
                           Checkout
                         </button>

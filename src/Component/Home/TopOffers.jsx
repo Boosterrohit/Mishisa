@@ -1,6 +1,7 @@
 import React from "react";
 import { fivePerOff } from "../../data";
 import purchases from "../../Asset/Image/purchases.png";
+import { Link } from "react-router-dom";
 const TopOffers = () => {
   return (
     <div className="container mx-auto max-w-[1440px] px-7 lg:py-3">
@@ -10,22 +11,26 @@ const TopOffers = () => {
           return (
             <div key={item.id}>
               <div className=" col-span-6 sm:col-span-6 md:col-span-6 lg:col-span-4">
-                <img
-                  src={item.image2}
-                  alt="TopOffer"
-                  className="max-w-full h-auto rounded-lg"
-                />
+                <Link to={item.slux}>
+                  <img
+                    src={item.image2}
+                    alt="TopOffer"
+                    className="max-w-full h-auto rounded-lg"
+                  />
+                </Link>
               </div>
             </div>
           );
         })}
       </div>
       <div>
-        <img
-          src={purchases}
-          alt="purchases"
-          className="rounded-xl sm:mt-20 mt-8"
-        />
+        <Link to="/productlist">
+          <img
+            src={purchases}
+            alt="purchases"
+            className="rounded-xl sm:mt-20 mt-8"
+          />
+        </Link>
       </div>
     </div>
   );

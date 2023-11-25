@@ -3,6 +3,13 @@
     padding: 0 5px;
     min-height: 310px;
   }
+  .card1024 {
+    width: 100%;
+  }
+
+  .for1024 {
+    width: 587px !important;
+  }
   .cent {
     display: flex;
     justify-content: flex-start;
@@ -29,19 +36,6 @@
     padding-right: 31px;
   }
 }
-
-@media (min-width: 1280px) and (max-width: 1290px) {
-  /* .Nest_Hub_py {
-      padding: 8px 15px;
-    }
-    .device_responive {
-      padding: 0 5px;
-    }
-    .slick-dots {
-      display: none !important;
-    } */
-}
-
 .box {
   border-bottom-left-radius: 20px !important;
   border-bottom-right-radius: 20px !important;
@@ -61,4 +55,9 @@
 .slick-dots li.slick-active button:before {
   font-size: 20px;
   color: white;
+}
+@media (max-width: 600px) {
+  .giftbanner {
+    height: 136vh;
+  }
 }

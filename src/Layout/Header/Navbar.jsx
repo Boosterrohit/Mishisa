@@ -22,7 +22,7 @@ const Navbar = () => {
         <CgMenuLeft size={27} className="text-gray-500" />
       </div>
       <div className={`overlay ${open ? "block" : "hidden"}`}></div>
-      <nav className="bg-vibrant overflow-y-auto mt-1 sm:mt-1 mb-2 sm:mb-2 md:mb-3 lg:mb-0">
+      <nav className="bg-vibrant overflow-y-auto mb-2 sm:mb-2 md:mb-3 lg:mb-0">
         <div className="container max-w-[85rem] w-full mx-auto px-7 lg:px-44 devid">
           <div
             className={`md:flex hidden justify-between items-center ${
@@ -36,11 +36,11 @@ const Navbar = () => {
                   rel="noopener noreferrer"
                   className="text-white font-bold flex justify-center items-center"
                 >
-                  {item.name}
+                  <Link to={item.slux}>{item.name}</Link>
                   <span className="mt-[4.5px] mx-1">{item.arrow}</span>
                 </p>
                 {item.submenu && (
-                  <div className="absolute bg-white shadow-md max-w-[1440px]  container mx-auto  top-[117.4px]  mt-margintop hidden group-hover:block hover:block   left-0 right-0 z-20">
+                  <div className="absolute bg-white shadow-md max-w-[1440px]  container mx-auto  top-[113.4px]  mt-margintop hidden group-hover:block hover:block   left-0 right-0 z-20">
                     <div className="flex ">
                       {item.sublink.map((mysublink) => (
                         <div key={mysublink.id} className="block px-10">
@@ -54,7 +54,7 @@ const Navbar = () => {
                                 href="/"
                                 className="block text-base py-1 text-gray-500 hover:text-red-400"
                               >
-                                {slink.name}
+                                <Link to={slink.slux}>{slink.name}</Link>
                               </p>
                             </div>
                           ))}

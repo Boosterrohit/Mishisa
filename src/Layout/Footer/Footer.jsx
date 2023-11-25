@@ -26,9 +26,11 @@ const Footer = () => {
                 </p>
                 {topCategory.map((item) => (
                   <div key={item.id} className="mb-2">
-                    <p className="leading-4 text-gray-700 text-base tracking-wide ">
-                      {item.anchor}
-                    </p>
+                    <a href="#" rel="rr">
+                      <p className="leading-4 text-gray-700 text-base tracking-wide ">
+                        {item.anchor}
+                      </p>
+                    </a>
                   </div>
                 ))}
               </div>

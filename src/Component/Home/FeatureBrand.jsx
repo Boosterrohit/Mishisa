@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import { brand } from "../../data.js";
 import gift1 from "../../Asset/Image/giftproduct1.png";
 import gift2 from "../../Asset/Image/giftproduct2.png";
+import { Link } from "react-router-dom";
 const FeatureBrand = () => {
   var settings = {
     dots: true,
@@ -69,8 +70,12 @@ const FeatureBrand = () => {
         </div>
         <div className="flex justify-center mt-6 sm:mt-28 mb-20">
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4">
-            <img src={gift1} alt="Mishisa gift card" />
-            <img src={gift2} alt="Mishisa gift card" />
+            <Link to="/productlist">
+              <img src={gift1} alt="Mishisa gift card" />
+            </Link>
+            <Link to="/productlist">
+              <img src={gift2} alt="Mishisa gift card" />
+            </Link>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 import { headerSilkSlider } from "../../data.js";
 import { BiChevronRight, BiChevronLeft } from "react-icons/bi";
 import "../../Asset/Device.css";
@@ -79,11 +80,13 @@ const HeaderSlickSlider = () => {
           {headerSilkSlider.map((item) => {
             return (
               <div key={item.id}>
-                <img
-                  src={item.image1}
-                  alt="Mishisa"
-                  className="max-w-full px-1   rounded-lg min-h-[222px] sm:min-h-[222px] md:min-h-[224px]   lg:min-h-custom-min-height w-mobile-slide-image-width sm:-w-mobile-slide-image-width md:w-mobile-slide-image-width lg:w-custom-slide-image xl:w-custom-slide-image device_responive"
-                />
+                <Link to={item.slux}>
+                  <img
+                    src={item.image1}
+                    alt="Mishisa"
+                    className="max-w-full px-1   rounded-lg min-h-[222px] sm:min-h-[222px] md:min-h-[224px]   lg:min-h-custom-min-height w-mobile-slide-image-width sm:-w-mobile-slide-image-width md:w-mobile-slide-image-width lg:w-custom-slide-image xl:w-custom-slide-image device_responive"
+                  />
+                </Link>
               </div>
             );
           })}

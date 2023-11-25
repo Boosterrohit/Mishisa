@@ -4,6 +4,7 @@ import { beautyBrand } from "../../data.js";
 import qna from "../../Asset/Image/qna.png";
 import apple from "../../Asset/Image/apple.png";
 import googel from "../../Asset/Image/google.png";
+import { Link } from "react-router-dom";
 const BeautyQuestion = () => {
   var settings = {
     dots: false,
@@ -48,13 +49,15 @@ const BeautyQuestion = () => {
             {beautyBrand.map((item) => {
               return (
                 <div key={item.id}>
-                  <div className="flex justify-center mt-32 mb-52">
-                    <img
-                      src={item.image}
-                      alt="Beauty Question"
-                      className="max-w-full  bg-white min-w-[100px] sm:min-w-[165px] min-h-[65px] sm:px-10 px-2  mx-14 rounded-lg object-contain"
-                    />
-                  </div>
+                  <Link to={item.slux}>
+                    <div className="flex justify-center mt-32 mb-52">
+                      <img
+                        src={item.image}
+                        alt="Beauty Question"
+                        className="max-w-full  bg-white min-w-[100px] sm:min-w-[165px] min-h-[65px] sm:px-10 px-2  mx-14 rounded-lg object-contain"
+                      />
+                    </div>
+                  </Link>
                 </div>
               );
             })}

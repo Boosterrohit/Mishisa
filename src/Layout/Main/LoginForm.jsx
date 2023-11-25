@@ -1,6 +1,5 @@
 import React from "react";
-import Login from "../../Auth/Login";
-
+import Login from "../../Pages/auth/Login";
 const LoginForm = () => {
   return (
     <main>
@@ -8,5 +7,4 @@ const LoginForm = () => {
     </main>
   );
 };
-
 export default LoginForm;
